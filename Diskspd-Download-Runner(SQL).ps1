@@ -23,9 +23,9 @@ if (-not(Test-Path -Path $file -PathType Container)) {
 
  }
 
-Write-Host 'Runing command diskspd -t2 -o32 -b4k -r4k -w0 -d120 -Sh -D -L -c2G f:\IO.dat > C:\$env:computername-DiskspdResults.txt' -ForegroundColor Green
+Write-Host 'Runing command diskspd -t2 -o32 -b4k -r4k -w50 -d120 -Sh -D -L -c2G f:\IO.dat > C:\$env:computername-DiskspdResults.txt' -ForegroundColor Green
 
-C:\DISKSPD-Ready\amd64\diskspd -t2 -o32 -b4k -r4k -w0 -d120 -Sh -D -L -c2G f:\IO.dat > C:\$env:computername-DiskspdResults.txt
+C:\DISKSPD-Ready\amd64\diskspd -t2 -o32 -b4k -r4k -w50 -d120 -Sh -D -L -c2G f:\IO.dat > C:\$env:computername-DiskspdResults.txt
 
 Write-Host 'Clean up time...' -ForegroundColor Green
 
